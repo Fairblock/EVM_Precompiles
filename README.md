@@ -8,7 +8,7 @@ Our IBE scheme runs on the pairing‑friendly BLS12‑381 curve which is used fo
 ## Steps To add the precompiles to an EVM chain
 We provide decryption precompiles in both Go and Rust which can be added to the base EVM code along with the rest of the precompiles.
 ### Rust Precompiles
-For the Rust based chains, we have our decryption code written in Rust so it can be deployed as a precompile by adding it along with the rest of the precompiles in the client code.
+For the Rust based chains, we have our decryption code written in Rust so it can be deployed as a precompile by adding it along with the rest of the precompiles in the client code. The decryption code is available at `rust_decryption/src/decryption.rs`.
 
 ### Golang Precompiles
 For chains using go-ethereum, the Go version of our precompiles should be added to `core/vm/contracts.go`. Below are the required changes:
